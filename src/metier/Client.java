@@ -9,8 +9,8 @@ public class Client
 	private String nom;
 	private int montant;
 	private boolean reglee;
-	ArrayList<String> Facture = new ArrayList<String>();
-	ArrayList<String> Client = new ArrayList<String>();
+	private ArrayList<String> Facture = new ArrayList<String>();
+	private ArrayList<String> Client = new ArrayList<String>();
 
 	
 	
