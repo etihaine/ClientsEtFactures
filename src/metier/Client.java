@@ -24,11 +24,7 @@ public class Client
 		return this.nom;
 	}
 	
-	/**
-	 * Modifie le nom du client.
-	 * @param nom le nom du client.
-	 */
-	 
+
 	public void setNom(String nom)
 	{
 		this.nom = nom;

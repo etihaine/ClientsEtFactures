@@ -4,6 +4,9 @@ import java.time.LocalDate;
 
 public class Facture
 {
+	private int montant;
+	private LocalDate Date;
+
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
@@ -21,7 +24,7 @@ public class Facture
 	
 	public int getMontant()
 	{
-		return 0;
+		return this.montant;
 	}
 
 	/**
@@ -31,17 +34,15 @@ public class Facture
 	
 	public boolean estReglee()
 	{
+		
 		return true;
 	}
 
-	/**
-	 * Retourne la date de la facture.
-	 * @return la date de la facture.
-	 */
+
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return this.Date;
 	}
 
 	/**
@@ -50,6 +51,7 @@ public class Facture
 	
 	public void delete()
 	{
+		
 	}
 	
 	/**
