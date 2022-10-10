@@ -9,12 +9,15 @@ public class Client
 	private String nom;
 	private int montant;
 	private boolean reglee;
+	ArrayList<String> Facture = new ArrayList<String>();
+	ArrayList<String> Client = new ArrayList<String>();
 
 	
 	
 	public Client(String nom)
 	{
 		this.nom = nom ;
+		Client.add(nom);
 	}
 
 
@@ -38,6 +41,7 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
+		
 		return null;
 	}
 	
