@@ -2,35 +2,36 @@ package metier;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Client
 {
-	/** 
-	 * Crée un client.
-	 * @param nom le nom du client. 
-	 */
+	private String nom;
+	private int montant;
+	private boolean reglee;
+
+	
 	
 	public Client(String nom)
 	{
+		this.nom = nom ;
 	}
 
-	/**
-	 * Retourne le nom du client.
-	 * @return le nom du client.
-	 */
+
 	
 	public String getNom()
 	{
-		return null;
+		return this.nom;
 	}
 	
 	/**
 	 * Modifie le nom du client.
 	 * @param nom le nom du client.
 	 */
-	
+	 
 	public void setNom(String nom)
 	{
+		this.nom = nom;
 	}
 	
 	/**
@@ -102,5 +103,7 @@ public class Client
 	
 	public void delete()
 	{
+		
 	}
 }
+
