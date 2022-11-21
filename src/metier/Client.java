@@ -117,7 +117,6 @@ public class Client
 	
 	public void delete()
 	{
-		
 	}
 }
 
