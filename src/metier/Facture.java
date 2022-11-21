@@ -11,10 +11,15 @@ public class Facture
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
+	Facture (int montant, LocalDate date)
+	{
+		this.montant = montant;
+		this.Date = Date;
+	}
 	
 	public Client getClient()
 	{
-		return null;
+		return getClient();
 	}
 
 	/**
@@ -29,7 +34,7 @@ public class Facture
 
 	/**
 	 * Retourne vrai si la facture est reglée.
-	 * @return vrai ssi la facture est reglée.
+	 * @return vrai si la facture est reglée.
 	 */
 	
 	public boolean estReglee()

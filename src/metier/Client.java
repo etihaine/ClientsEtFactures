@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Client
 {
-	private String nom;
+	String nom;
 	private int montant;
 	private boolean reglee;
 	private ArrayList<String> Facture = new ArrayList<String>();
@@ -41,8 +41,8 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		
-		return null;
+		Facture facture=new Facture();
+		return this.facture;
 	}
 	
 	/**
@@ -103,7 +103,7 @@ public class Client
 	
 	public void delete()
 	{
-		
+		.delete();
 	}
 }
 
