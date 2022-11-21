@@ -58,7 +58,6 @@ public class Facture
 	
 	public void delete()
 	{
-		//Client.remove(this);
 	}
 	
 	/**
@@ -70,4 +69,5 @@ public class Facture
 	{
 		return null;
 	}
+	
 }

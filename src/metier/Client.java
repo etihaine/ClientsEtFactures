@@ -48,14 +48,13 @@ public class Client
 	}
 
 	
-	 void add(Facture facture) {
-		//Factures.add(facture);
+
+
+
+	private void add(Facture facture) {
+		// TODO Auto-generated method stub
 		
 	}
-	 void remove (Facture facture)
-	 {
-		// facture.remove(facture);
-	 }
 
 
 
