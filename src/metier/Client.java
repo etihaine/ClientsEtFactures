@@ -1,6 +1,7 @@
 package metier;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class Client
 	String nom;
 	private int montant;
 	private boolean reglee;
-	private ArrayList<String> Facture = new ArrayList<String>();
+	private ArrayList<String> Factures = new ArrayList<String>();
 	private ArrayList<String> Client = new ArrayList<String>();
 
 	
@@ -41,10 +42,23 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		Facture facture=new Facture();
-		return this.facture;
+		Facture facture = new Facture(this, montant);
+		add(facture);
+		return facture;
 	}
+
 	
+	 void add(Facture facture) {
+		Factures.add(facture);
+		
+	}
+	 void remove (Facture facture)
+	 {
+		 facture.remove(facture);
+	 }
+
+
+
 	/**
 	 * Retourne une copie de la liste des factures du client. 
 	 * @return une copie de la liste des factures du client.
@@ -52,7 +66,7 @@ public class Client
 
 	public List<Facture> getFactures()
 	{
-		return null;
+		return Collection.unmodifiableList(Factures);
 	}
 	
 	/**
@@ -103,7 +117,7 @@ public class Client
 	
 	public void delete()
 	{
-		.delete();
+		
 	}
 }
 

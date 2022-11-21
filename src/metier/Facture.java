@@ -6,20 +6,22 @@ public class Facture
 {
 	private int montant;
 	private LocalDate Date;
+	private Client client;
 
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
-	Facture (int montant, LocalDate date)
+	Facture (Client client, int montant)
 	{
+		this.client = client;
 		this.montant = montant;
-		this.Date = Date;
+		this.Date = LocalDate.now();
 	}
 	
 	public Client getClient()
 	{
-		return getClient();
+		return client;
 	}
 
 	/**
@@ -56,7 +58,7 @@ public class Facture
 	
 	public void delete()
 	{
-		
+		Client.remove(this);
 	}
 	
 	/**
