@@ -66,6 +66,7 @@ public class Client
 
 	public List<Facture> getFactures()
 	{
+		return null;
 		//return Collection.unmodifiableList(Factures);
 	}
 	
