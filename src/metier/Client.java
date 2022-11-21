@@ -49,12 +49,12 @@ public class Client
 
 	
 	 void add(Facture facture) {
-		Factures.add(facture);
+		//Factures.add(facture);
 		
 	}
 	 void remove (Facture facture)
 	 {
-		 facture.remove(facture);
+		// facture.remove(facture);
 	 }
 
 
@@ -66,7 +66,7 @@ public class Client
 
 	public List<Facture> getFactures()
 	{
-		return Collection.unmodifiableList(Factures);
+		//return Collection.unmodifiableList(Factures);
 	}
 	
 	/**
